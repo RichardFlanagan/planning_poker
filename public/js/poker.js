@@ -11,3 +11,8 @@ var card_display_drop = function(ev){
 var card_drag_start = function(ev){
 	console.log("drag start");
 }
+
+var on_click_card = function(ev){
+	console.log("click");
+	ev['toElement'].style.backgroundColor = 'green';
+}
