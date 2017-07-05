@@ -1,0 +1,10 @@
+extends layout.pug
+
+block content
+	a(href='/') Home
+	p Choose your card!
+
+	include card_display
+	#my_cards
+		for card in cards
+			include card
