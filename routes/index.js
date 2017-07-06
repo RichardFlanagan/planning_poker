@@ -14,7 +14,7 @@ routes.get('/', function(req, res){
 // Poker page
 routes.get('/poker', function(req, res){
 	var context = {
-		'cards': [1,2,3]
+		'cards': [1,2,3,4]
 	};
 	res.render('poker.pug', context);
 });
