@@ -1,3 +1,8 @@
+var trigger_sockets = function () {
+	var socket = io();
+	socket.emit('user_joined', 'username');
+};
+
 var card_display_allow_drop = function(ev){
 	ev.preventDefault();
 	console.log("allow drop");

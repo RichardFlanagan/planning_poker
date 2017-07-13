@@ -1,3 +1,15 @@
+##
+## Custom
+##
+
+# Database
+db/
+
+
+##
+## Node.js
+##
+
 # Logs
 logs
 *.log

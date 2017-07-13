@@ -1,10 +1,24 @@
 extends layout.pug
 
-block content
-	a(href='/') Home
-	p Choose your card!
+append scripts
+	script(src="/socket.io/socket.io.js")
+	script.
+		$(function () {
+			trigger_sockets();
+		});
 
-	include card_display
-	#my_cards
-		for card in cards
-			include card
+block content
+	#poker_page
+		#main_pane
+			a(href='/') Home
+			p Choose your card!
+
+			include card_display
+			#my_cards
+				for card in cards
+					include card
+
+		#side_pane
+			h3 Users
+			for username in usernames
+				p #{username}

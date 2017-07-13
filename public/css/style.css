@@ -21,3 +21,20 @@
 	background-color: #aaaaaa;
 	border-radius: 25px;
 }
+
+#poker_page {
+	display: table;
+}
+
+#main_pane {
+	display: table-cell;
+	width: 100%;
+}
+
+#side_pane {
+	background-color: #dddddd;
+	min-width: 280px;
+	display: table-cell;
+	border: 2px solid #555555;
+	padding-left: 15px;
+}
