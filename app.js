@@ -6,10 +6,19 @@ const io = require('socket.io')(http);
 const routes = require('./routes');
 
 const mongoose = require('mongoose');
-const User = require('./models/user')
-const PokerRoom = require('./models/poker_room')
+const User = require('./models/user');
+const PokerRoom = require('./models/poker_room');
 
-mongoose.connect('mongodb://localhost/poker');
+
+// new User({'name':'richard'}).save();
+// new User({'name':'conor'}).save();
+// new User({'name':'kevin'}).save();
+// new PokerRoom({'name':'test_room'}).save();
+
+
+mongoose.connect('mongodb://localhost/poker', {
+	useMongoClient: true,
+});
 app.set('db', mongoose);
 
 app.set('view engine', 'pug');

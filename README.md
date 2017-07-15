@@ -11,3 +11,5 @@ and in your browser, visit:
 ```
 http://localhost:3000/
 ```
+
+Note: You must have a mongodb instance running on the default port.
