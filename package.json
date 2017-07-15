@@ -2,6 +2,11 @@
   "name": "planning_poker",
   "description": "Planning Poker site",
   "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RichardFlanagan/planning_poker.git"
+  },
   "dependencies": {
     "express": "^4.15.3",
     "express-session": "^1.15.3",
