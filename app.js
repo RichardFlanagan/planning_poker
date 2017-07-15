@@ -23,7 +23,7 @@ app.set('db', mongoose);
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 
 app.locals.site_name = 'planning_poker';
